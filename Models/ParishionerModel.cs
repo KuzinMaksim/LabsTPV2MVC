@@ -19,7 +19,7 @@ namespace LabsTPV2._3.Models
         [DisplayName("BirthDate")]
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
-        [DisplayName("Adress")]
+        [DisplayName("Address")]
         public string Address { get; set; }
         [DisplayName("Sex")]
         public bool Sex { get; set; }
