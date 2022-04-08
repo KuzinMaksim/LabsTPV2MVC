@@ -50,7 +50,10 @@ namespace LabsTPV2._3
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Parishioner}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                   name: "handmade",
+                   pattern: "{controller=CntHome}/staticsegment/{action=Index}/{uvar?}");
             });
         }
     }
