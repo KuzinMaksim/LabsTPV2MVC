@@ -49,11 +49,10 @@ namespace LabsTPV2._3
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Parishioner}/{action=Index}/{id?}");
-                endpoints.MapControllerRoute(
                    name: "handmade",
-                   pattern: "{controller=CntHome}/staticsegment/{action=Index}/{uvar?}");
+                   pattern: "{controller=CntHome}/staticsegment/{action=Index}/{uvar?}",
+                constraints: new { controller = "^C.*" });
+
             });
         }
     }

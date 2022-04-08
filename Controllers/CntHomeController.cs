@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace LabsTPV2._3.Controllers
 {
+    
     public class CntHomeController : Controller
     {
         private readonly ILogger<CntHomeController> _logger;
@@ -17,7 +18,6 @@ namespace LabsTPV2._3.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             ViewBag.Uvar = RouteData.Values["uvar"] == null ? "Пользовательская переменная не задана" : RouteData.Values["uvar"];

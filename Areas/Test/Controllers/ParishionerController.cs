@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace LabsTPV2._3.Controllers
 {
+    [Route("{area:exists}/{controller}/{action}")]
     public class ParishionerController : Controller
     {
         public short count = 0;
@@ -16,6 +17,7 @@ namespace LabsTPV2._3.Controllers
             return View();
         }
         [HttpPost]
+        [Area("Test")]
         public ActionResult Index(ParishionerModel parishionerModel)
         {
             Request.Cookies.TryGetValue("count", out string countFromCookies);
