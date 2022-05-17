@@ -14,7 +14,7 @@ namespace LabsTPV2._3.Models
         public string Name { get; set; }
 
         public string Surname { get; set; }
-
+        [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
         public string Adress { get; set; }
